@@ -1,6 +1,6 @@
 <?php
 
-namespace Laure-Milian\App\Foo;
+namespace LaureMilian\App\Foo;
 
 Class Client {
 	public function render() {

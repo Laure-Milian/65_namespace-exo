@@ -1,6 +1,6 @@
 <?php
 
-namespace Laure-Milian\App\Bar;
+namespace LaureMilian\App\Bar;
 
 Class Client {
 	public function render() {
