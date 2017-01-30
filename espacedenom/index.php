@@ -1,22 +1,19 @@
 <?php
 
-namespace Index {
-	require 'vendor/autoload.php';
-}
+require 'vendor/autoload.php';
 
-namespace Index\Bar {
-	require 'src/Bar/Client.php';
-	use LaureMilian\App\Bar\Client;
-	$bar = new Client;
-	echo $bar->render();
-}
+require 'src/Bar/Client.php';
+require 'src/Foo/Client.php';
 
-namespace Index\Foo {
-	require 'src/Foo/Client.php';
-	use LaureMilian\App\Foo\Client;
-	$bar = new Client;
-	echo $bar->render();
-}
+use LaureMilian\App\Bar\Client as Bar;
+use LaureMilian\App\Foo\Client as Foo;
+
+$foo = new Foo;
+echo $foo->render();
+
+$bar = new Bar;
+echo $bar->render();
+
 
 
 
