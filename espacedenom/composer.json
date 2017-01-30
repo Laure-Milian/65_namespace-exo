@@ -6,5 +6,8 @@
             "email": "laure.milian@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+    	"psr-4": { "Laure-Milian\\App\\" : "src/" }
+    }
 }
